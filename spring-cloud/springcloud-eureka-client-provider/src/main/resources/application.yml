@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+center:
+  port: 8080
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${center.port}/eureka/
+    register-with-eureka: true # 是否注册到其他server上
+    fetch-registry: false
+
+spring:
+  application:
+    name: spring-cloud-provider

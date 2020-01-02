@@ -5,7 +5,7 @@ eureka:
   datacenter: cloud-data-center
   environment: test
   instance:
-    hostname: 127.0.0.1
+    hostname: 0.0.0.0
     prefer-ip-address: false
   client:
     healthcheck:
