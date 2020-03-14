@@ -15,9 +15,9 @@ public class ResponseController {
     }
 
     @ResponseBody
-    @RequestMapping( value = "put/{apiParam}", method = RequestMethod.GET)
+    @RequestMapping( value = "put/{apiParam}", method = RequestMethod.PUT)
     public String getInfo(@PathVariable String apiParam) {
-        return "get: " + apiParam;
+        return "put: " + apiParam;
     }
 
 //    @ResponseBody
